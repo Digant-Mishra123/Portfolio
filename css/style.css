@@ -1,0 +1,26 @@
+.bg-black{
+    background-color: #020227 !important;
+}
+.bg-dark{
+    background-color: #1c1c3b !important;
+}
+.intro-card{
+    margin-top: 100px;
+}
+.user-img{
+    width: 150px;
+    height: 150px;
+    margin-top: -90px;
+    border-radius: 50%;
+    border: 5px solid #1c1c3b;
+}
+.skill-img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.tools img{
+    height: 40px;
+    width: 40px;
+    margin: 8px;
+}
