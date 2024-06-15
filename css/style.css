@@ -2,8 +2,9 @@
     background-color: #010109 !important;
 }
 .bg-dark{
-    background-color: #010115 !important;
+    background-color: #000011 !important;
 }
+
 .intro-card{
     margin-top: 100px;
 }
@@ -11,7 +12,66 @@
   position: relative;
   text-decoration: none;
 }
+/* Remove border from toggler */
+.navbar-toggler {
+    border: 0 !important;
+}
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #e74c3c;
+    display: block;
+    transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar{
+    margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
 .text-link::after{
   content: '';
   opacity: 0;
@@ -26,12 +86,17 @@
 .text-link:hover::after{
   opacity: 1;
 }
+
 .user-img{
     width: 150px;
     height: 160px;
     margin-top: -100px;
     border-radius: 50%;
     border: 5px solid #1c1c3b;
+}
+.user-img:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
 .skill-img{
     width: 80px;
@@ -42,6 +107,13 @@
     height: 40px;
     width: 40px;
     margin: 8px;
+}
+.project-list{
+    box-shadow: 4px 5px 1px 1px black;
+    transition: all 0.3s ease-in-out;
+}
+.project-list:hover{
+    transform: scale(1.05);
 }
 .btn{
     background-color: #010109;
