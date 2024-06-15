@@ -7,32 +7,25 @@
 .intro-card{
     margin-top: 100px;
 }
-
 .text-link{
-    text-decoration: none;
+  position: relative;
+  text-decoration: none;
 }
 
-.navbar-link{
-    position: relative;
+.text-link::after{
+  content: '';
+  opacity: 0;
+  transition: all 0.2s;
+  height: 2px;
+  width: 100%;
+  background-color: wheat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-
-.navbar-link::after{
-    content: '';
-    opacity: 0;
-    transition: all 0.2s;
-    height: 2px;
-    width: 100%;
-    background-color: wheat;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.text-link:hover::after{
+  opacity: 1;
 }
-.navbar-link:hover::after{
-    opacity: 1;
-}
-
-
-
 .user-img{
     width: 150px;
     height: 160px;
