@@ -1,26 +1,63 @@
 .bg-black{
-    background-color: #020227 !important;
+    background-color: #010109 !important;
 }
 .bg-dark{
-    background-color: #1c1c3b !important;
+    background-color: #010115 !important;
 }
 .intro-card{
     margin-top: 100px;
 }
+
+.text-link{
+    text-decoration: none;
+}
+
+.navbar-link{
+    position: relative;
+}
+
+.navbar-link::after{
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: wheat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.navbar-link:hover::after{
+    opacity: 1;
+}
+
+
+
 .user-img{
     width: 150px;
-    height: 150px;
-    margin-top: -90px;
+    height: 160px;
+    margin-top: -100px;
     border-radius: 50%;
     border: 5px solid #1c1c3b;
 }
 .skill-img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: 10px;
 }
 .tools img{
     height: 40px;
     width: 40px;
     margin: 8px;
+}
+.btn{
+    background-color: #010109;
+    color: white;
+}
+.btn-send{
+    background-color: blue;
+}
+.btn-warning{
+    background-color: #bd9b12 !important;
+    color: black;
 }

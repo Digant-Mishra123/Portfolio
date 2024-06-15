@@ -10,30 +10,44 @@
 </head>
 <body class="bg-black text-white">
     <div class="d-flex justify-content-end align-items-center p-3">
-        <div class="form-check form-switch">
+        <!-- <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onchange="toggleTheme()" checked>
-            <label class="form-check-label" for="flexSwitchCheckChecked">Dark</label>
+            <label class="form-check-label" for="flexSwitchCheckChecked"><i class="bi bi-sun"></i></label>
+        </div> -->
+        <div class="toggle-theme">
+            <input type="checkbox" id="toggleTheme" class="visually-hidden" onchange="toggleTheme()" checked>
+            <label for="toggleTheme" id="toggleThemeLabel">
+                <i id="toggleIcon" class="bi bi-moon btn btn-light border-1"></i>
+            </label>
+        </div>
+        <div class="mx-3 text-white">
+            <a href="./index.html" class="lead mx-3 text-link text-white navbar-link">Home</a>
+            <a href="#academics" class="lead mx-3 text-link text-white navbar-link">Academics</a>
+            <a href="#skills" class="lead mx-3 text-link text-white navbar-link">Skills</a>
+            <a href="#projects" class="lead mx-3 text-link text-white navbar-link">Projects</a>
         </div>
         <a href="#contact" class="btn btn-warning rounded-pill mx-3">Hire Me</a>
     </div>
-    <div class="container my-5">
+    <div class="container my-4">
         <!-- Intro -->
          <div class="card bg-dark text-white content intro-card">
             <div class="card-body text-center">
-                <img src="./images/person.jpg" alt="" class="user-img">
-                <h1>John Doe</h1>
-                <p class="lead fw-semibold">Freshers, B.tech CSE</p>
-                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et consequatur magni quae? Accusamus aut eius reiciendis nulla perferendis animi perspiciatis illo atque delectus sed quasi iusto tenetur, maxime corrupti magnam sapiente suscipit vitae vero unde nisi, veritatis harum id reprehenderit vel! Ex consectetur cupiditate odit quod numquam voluptas similique placeat!</p>
-                <a href="" class="btn btn-light rounded-pill mt-3">Download Resume <i class="bi bi-arrow-right"></i></a>
+                <img src="./images/My_photo(1).png" alt="" class="user-img">
+                <h1>Digant Mishra</h1>
+                <p class="lead fw-semibold">Fresher, B.tech CSE</p>
+                <div>
+                    <hr>
+                </div>
+                <p class="lead">Aspiring Full Stack Web Developer, with a strong commitment to learning and mastering various web development technologies. I have already built a solid foundation in key areas such as HTML, CSS, and JavaScript, and I am currently exploring backend technologies and databases.</p>
+                <a href="https://drive.google.com/file/d/1Q_Al9tgn17UkWeQFiJwiG5tvoKMmGc-s/view?usp=sharing" target="_blank" class="btn btn-light rounded-pill mt-3">Download Resume <i class="bi bi-arrow-right"></i></a>
             </div>
          </div>
 
          <!-- Academics -->
-          <div class=".card bg-dark text-white content aca-card my-5">
+          <div id="academics" class="card bg-dark text-white content aca-card my-5">
             <div class="card-body p-5">
                 <div class="text-center mb-3">
                     <h1>Academic Records</h1>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora aliquam magnam, nulla adipisci sit dolores ut, velit blanditiis rem eos, beatae quod neque at soluta facere vitae quis provident eum.</p>
                 </div>
                 <div class="table-responsive">
                     <table id="acaTable"class="table table-bordered border-white table-dark">
@@ -50,19 +64,19 @@
                                 <td>B.Tech</td>
                                 <td>Silicon University</td>
                                 <td>2025</td>
-                                <td>9.4</td>
+                                <td>8.6</td>
                             </tr>
                             <tr>
-                                <td>H.S</td>
-                                <td>Lorem ipsum dolor sit amet.</td>
+                                <td>Higher Secondary</td>
+                                <td>St. Xavier's High School</td>
                                 <td>2021</td>
-                                <td>94%</td>
+                                <td>94</td>
                             </tr>
                             <tr>
                                 <td>Secondary</td>
-                                <td>Lorem ipsum dolor sit amet.</td>
+                                <td>St. Xavier's High School</td>
                                 <td>2019</td>
-                                <td>93%</td>
+                                <td>93</td>
                             </tr>
                         </tbody>
                     </table>
@@ -71,37 +85,54 @@
           </div>
 
           <!-- Skills -->
-          <div class="card bg-dark text-white content skill-card my-5">
-            <div class="card-body p-5">
-                <div class="text-center mb-3">
+          <div id="skills" class="card bg-dark text-white content skill-card my-8">
+            <div class="card-body p-4">
+                <div class="text-center mt-4 mb-4">
                     <h1>My Skills</h1>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora aliquam magnam, nulla adipisci sit dolores ut, velit blanditiis rem eos, beatae quod neque at soluta facere vitae quis provident eum.</p>
                 </div>
-                <div class="text-center">
-                    <img src="./images/skills/bootstrap.png" alt="" class="skill-img">
-                    <img src="./images/skills/c.png" alt="" class="skill-img">
-                    <img src="./images/skills/css.png" alt="" class="skill-img">
-                    <img src="./images/skills/django.png" alt="" class="skill-img">
-                    <img src="./images/skills/html.png" alt="" class="skill-img">
-                    <img src="./images/skills/java.png" alt="" class="skill-img">
-                    <img src="./images/skills/js.png" alt="" class="skill-img">
-                    <img src="./images/skills/mongo.png" alt="" class="skill-img">
-                    <img src="./images/skills/mysql.png" alt="" class="skill-img">
-                    <img src="./images/skills/node.png" alt="" class="skill-img">
-                    <img src="./images/skills/python.png" alt="" class="skill-img">
-                    <img src="./images/skills/react.png" alt="" class="skill-img">
+                <div>
+                    <hr>
+                </div>
+                <div class="row g-4 mt-4">
+                    <div class="col-md-6 text-center">
+                        <h2>Programming Language</h2>
+                        <img src="./images/skills/java.png" alt="" class="skill-img">
+                        <img src="./images/skills/c.png" alt="" class="skill-img">
+                        <img src="./images/skills/python.png" alt="" class="skill-img">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h2>Web Technology</h2>
+                        <img src="./images/skills/html.png" alt="" class="skill-img">
+                        <img src="./images/skills/css.png" alt="" class="skill-img">
+                        <img src="./images/skills/js.png" alt="" class="skill-img">
+                    </div>
+                    <div class="row g-4 mt-4"> 
+                        <div class="col-md-6 text-center">
+                            <h2>FrameWorks</h2>
+                            <img src="./images/skills/bootstrap.png" alt="" class="skill-img">
+                            <img src="./images/skills/django.png" alt="" class="skill-img">
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <h2>Databases</h2>
+                            <img src="./images/skills/mysql.png" alt="" class="skill-img">
+                            <img src="./images/skills/oracle.png" alt="" class="skill-img">
+                            <img src="./images/skills/mongodb.png" alt="" class="skill-img">
+                        </div>
+                    </div>
                 </div>
             </div>
           </div>
 
           <!-- Project -->
-          <div class="card bg-dark text-white content project-card my-5">
+          <div id="projects" class="card bg-dark text-white content project-card my-5">
             <div class="card-body p-5">
                 <div class="text-center mb-4">
                     <h1>My Projects</h1>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora aliquam magnam, nulla adipisci sit dolores ut, velit blanditiis rem eos, beatae quod neque at soluta facere vitae quis provident eum.</p>
+                    <div>
+                        <hr>
+                    </div>
                 </div>
-                <div class="row mb-4 g-4">
+                <div class="row mt-4 mb-4 g-4">
                     <div class="col-md-4">
                         <img src="./images/project-1.PNG" class="img-fluid h-100" alt="">
                     </div>
@@ -115,13 +146,13 @@
                             <img src="./images/skills/js.png" alt="">
                         </div>
                         <div>
-                            <a href="" class="btn btn-sm btn-light">Live Preview</a>
+                            <a href="./../hosting/index.html" target="_blank" class="btn btn-sm btn-light">Live Preview</a>
                             <a href="" class="btn btn-sm btn-light">Source Code</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="row mb-4 g-4">
+                <div class="row mb-4 g-4 mt-4">
                     <div class="col-md-4">
                         <img src="./images/project2.PNG" class="img-fluid h-100" alt="">
                     </div>
@@ -136,7 +167,7 @@
                             <img src="./images/skills/bootstrap.png" alt="">
                         </div>
                         <div>
-                            <a href="" class="btn btn-sm btn-light">Live Preview</a>
+                            <a href="./index.html" class="btn btn-sm btn-light">Live Preview</a>
                             <a href="" class="btn btn-sm btn-light">Source Code</a>
                         </div>
                     </div>
@@ -147,35 +178,42 @@
           <!-- Contact -->
           <div id="contact" class="card bg-dark text-white content contact-card my-5">
             <div class="card-body p-5">
-                <div class="text-center mb-3">
+                <div class="text-center mb-5">
                     <h1>Get in Touch</h1>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora aliquam magnam, nulla adipisci sit dolores ut, velit blanditiis rem eos, beatae quod neque at soluta facere vitae quis provident eum.</p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <form action="" method="get">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <form action="./index.html" method="get">
                             <input type="text" class="form-control mb-2" placeholder="Name">
                             <input type="text" class="form-control mb-2" placeholder="Mobile">
                             <input type="text" class="form-control mb-2" placeholder="Email">
                             <textarea rows="5" class="form-control mb-2" placeholder="Message"></textarea>
-                            <input type="submit" class="btn btn-primary w-50 rounded-pill" value="Send">
+                            <input type="submit" class="btn btn-send btn-primary w-50 mt-2 rounded-pill" value="Send">
                         </form>
                     </div>
-                    <div class="col-md-6">
-                        <p class="mb-1"><i class="bi bi-geo-alt-fill fs-2"></i> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quasi!</p>
-                        <p class="mb-1"><i class="bi bi-phone-fill fs-2"></i> +91 8794561235</p>
-                        <p class="mb-1"><i class="bi bi-envelope-at fs-2"></i> Abcd@gmail.com</p>
-                        <p class="mb-1"><i class="bi bi-linkedin fs-2"></i> <a href=""> www.linkedin.com/John-Doe</a></p>
-                        <p class="mb-1"><i class="bi bi-github fs-2"></i><a href=""> www.github.com/John-Doe</a></p>
+                    <div class="col-md-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.420983473562!2d85.7630564746939!3d20.241368114357456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a9f6b41dedd7%3A0x50ed2b8be436adba!2sJayalaxmi%20Residency!5e0!3m2!1sen!2sin!4v1718422395717!5m2!1sen!2sin" width="100%" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill fs-2 mx-2"></i> Patrapada Bhubaneswar Odisha</p>
+                        <p class="mb-1"><i class="bi bi-phone-fill fs-2 mx-2"></i> +91 8328921788</p>
+                        <p class="mb-1"><i class="bi bi-envelope-at fs-2 mx-2"></i>  digantmishra16@gmail.com</p>
                     </div>
                 </div>
             </div>
           </div>
-
     </div>
 
-    <footer class="p-3 text-center">
-        &copy;2024 | John Doe
+    <footer class="p-2 text-center">
+        <div>
+            <span class="lead fw-semibold">Follow me on</span>
+            <span><a href="https://www.linkedin.com/in/digant-mishra-781661242/"><i class="bi bi-linkedin social-logo fs-2 ms-3 text-white"></i></a></span>
+            <span><a href="https://github.com/Digant-Mishra123"><i class="bi bi-github social-logo fs-2 mx-2 social-logo text-white"></i></a></span>
+            <span><a href="https://www.instagram.com/digant__mishra/?next=%2F&hl=en"><i class="bi bi-instagram social-logo fs-2 social-logo text-white"></i></a></span>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-1"> 
+            &copy;2024 | John Doe
+        </div>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/js-master.js"></script>
