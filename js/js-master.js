@@ -13,7 +13,7 @@ function toggleTheme(){
         document.querySelector('#header-text').classList.remove("text-white");
         document.querySelector('#header-text').classList.add("text-black");
         document.querySelector('#navbar').classList.remove('bg-dark')
-        document.querySelector('#navbar').classList.remove('bg-light')
+        document.querySelector('#navbar').classList.add('bg-light')
         document.query
         for(let i=0;i<cards.length;i++){
             let card = cards[i]
@@ -33,7 +33,7 @@ function toggleTheme(){
         for(let i=0;i<toggleicons.length;i++){
             let ti=toggleicons[i]
             ti.classList.remove('bg-white');
-            ti.classList.add('bg-black');
+            ti.classList.add('bg-dark');
         }
 
         document.querySelector('#acaTable').classList.remove("border-white","table-dark");
@@ -44,6 +44,8 @@ function toggleTheme(){
         document.querySelector('#toggleIcon').classList.add("bi-moon","btn-light");
         document.querySelector('#header-text').classList.remove("text-black");
         document.querySelector('#header-text').classList.add("text-white");
+        document.querySelector('#navbar').classList.remove('bg-light')
+        document.querySelector('#navbar').classList.add('bg-dark')
         for(let i=0;i<cards.length;i++){
             let card = cards[i]
             card.classList.remove("bg-light","text-black");

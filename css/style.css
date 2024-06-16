@@ -4,17 +4,58 @@
 .bg-dark{
     background-color: #000011 !important;
 }
-
+.table-dark{
+    color: #000011 !important;
+}
 .intro-card{
     margin-top: 100px;
 }
-.text-link{
-  position: relative;
-  text-decoration: none;
-}
-/* Remove border from toggler */
 .navbar-toggler {
     border: 0 !important;
+}.container {   
+    position: relative;
+}
+.aca {
+    background-color: black;
+    border: 1px solid #6c757d;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+.aca:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.aca-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+.aca-content p {
+    margin: 5px 0;
+    color: white;
+}
+.staggered {
+    margin-top: 20px;
+}
+.staggered:nth-child(2) {
+    margin-top: 40px;
+}
+.staggered:nth-child(3) {
+    margin-top: 60px;
+}
+.arrow {
+    position: absolute;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
+.arrow-down {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
 }
 
 .navbar-toggler:focus,
@@ -69,9 +110,10 @@
 .navbar-toggler.collapsed .bottom-bar {
     transform: rotate(0);
 }
-/* State when navbar is collapsed (END) */
-
-/* Color of Toggler when collapsed */
+.text-link{
+    position: relative;
+    text-decoration: none;
+  }
 .text-link::after{
   content: '';
   opacity: 0;
@@ -123,6 +165,6 @@
     background-color: blue;
 }
 .btn-warning{
-    background-color: #bd9b12 !important;
+    background-color: #c2a11d !important;
     color: black;
 }
