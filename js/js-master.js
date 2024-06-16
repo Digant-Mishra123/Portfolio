@@ -3,6 +3,7 @@ let cards=document.querySelectorAll(".content")
 const socialLogos = document.querySelectorAll('.social-logo');
 const links = document.querySelectorAll(".text-link");
 const toggleicons = document.querySelectorAll(".toggler-icon");
+const arrowElements = document.querySelectorAll('.arrow');
 function toggleTheme(){
     count++;
     if(count % 2 != 0){
@@ -35,6 +36,10 @@ function toggleTheme(){
             ti.classList.remove('bg-white');
             ti.classList.add('bg-dark');
         }
+        for(let i=0;i<arrowElements.length;i++){
+            let ae=arrowElements[i];
+            ae.style.borderColor = 'black';
+        }
 
         document.querySelector('#acaTable').classList.remove("border-white","table-dark");
     }else{
@@ -65,6 +70,10 @@ function toggleTheme(){
             let ti=toggleicons[i]
             ti.classList.remove('bg-dark');
             ti.classList.add('bg-white');
+        }
+        for(let i=0;i<arrowElements.length;i++){
+            let ae=arrowElements[i];
+            ae.style.borderColor = 'white';
         }
         document.querySelector('#acaTable').classList.add("border-white","table-dark");
     }
