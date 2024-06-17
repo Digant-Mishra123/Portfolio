@@ -4,6 +4,7 @@ const socialLogos = document.querySelectorAll('.social-logo');
 const links = document.querySelectorAll(".text-link");
 const toggleicons = document.querySelectorAll(".toggler-icon");
 const arrowElements = document.querySelectorAll('.project-list');
+const arrowElements2 = document.querySelectorAll('.project-list2');
 document.addEventListener('DOMContentLoaded', () => {
     const sections2 = document.querySelectorAll('.content2');
     const sections3 = document.querySelectorAll('.content-intro');
@@ -80,7 +81,6 @@ function toggleTheme(){
         document.querySelector('#projects').classList.add('text-black')
         document.querySelector('#contact').classList.remove('text-white')
         document.querySelector('#contact').classList.add('text-black')
-        document.query
         for(let i=0;i<cards.length;i++){
             let card = cards[i]
             card.classList.remove("bg-dark","text-white");
@@ -104,6 +104,11 @@ function toggleTheme(){
         for(let i=0;i<arrowElements.length;i++){
             let ae=arrowElements[i];
             ae.style.boxShadow = '1px 1px 1px 1px black';
+        }
+        for(let i=0;i<arrowElements2.length;i++){
+            let ae=arrowElements2[i];
+            ae.style.border='2px solid white'
+            ae.style.boxShadow = '2px 2px 10px black';
         }
 
         document.querySelector('#acaTable').classList.remove("border-white","table-dark");
@@ -147,6 +152,11 @@ function toggleTheme(){
         for(let i=0;i<arrowElements.length;i++){
             let ae=arrowElements[i];
             ae.style.boxShadow = '1px 1px 1px 1px white';
+        }
+        for(let i=0;i<arrowElements2.length;i++){
+            let ae=arrowElements2[i];
+            ae.style.border='2px solid white'
+            ae.style.boxShadow = '2px 2px 10px white';
         }
         document.querySelector('#acaTable').classList.add("border-white","table-dark");
     }

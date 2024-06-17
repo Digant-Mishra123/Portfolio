@@ -59,12 +59,15 @@
     padding-top: 2em;
     padding-bottom: 2em;
     position: relative;
+    
 }
 .checkpoint div{
     border: 2px solid white;
     border-radius: 1em;
     padding: 1.5em;
     background-color: black;
+    box-shadow: 2px 2px 10px white;
+    transition: all 0.3s ease-in-out;
 }
 .checkpoint p{
     line-height: 24px;
