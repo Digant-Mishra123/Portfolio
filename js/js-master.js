@@ -7,7 +7,7 @@ const arrowElements = document.querySelectorAll('.project-list');
 document.addEventListener('DOMContentLoaded', () => {
     const sections2 = document.querySelectorAll('.content2');
     const sections3 = document.querySelectorAll('.content-intro');
-
+    const sections4 = document.querySelectorAll('.content-footer');
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -32,8 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    const observerCallbackBottomUp = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('slide-top');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
     const observer2 = new IntersectionObserver(observerCallback, observerOptions);
     const observer3 = new IntersectionObserver(observerCallbackTopDown, observerOptions);
+    const observer4 = new IntersectionObserver(observerCallbackBottomUp, observerOptions);
 
     sections2.forEach(section => {
         section.classList.add('hidden');
@@ -41,6 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     sections3.forEach(section => {
+        section.classList.add('hidden');
+        observer3.observe(section);
+    });
+    sections4.forEach(section => {
         section.classList.add('hidden');
         observer3.observe(section);
     });
