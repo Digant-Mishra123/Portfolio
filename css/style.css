@@ -145,6 +145,7 @@
     height: 80px;
     margin: 10px;
 }
+
 .tools img{
     height: 40px;
     width: 40px;
@@ -165,6 +166,26 @@
     background-color: blue;
 }
 .btn-warning{
-    background-color: #c2a11d !important;
+    background-color: #d2af24 !important;
     color: black;
+    font-weight: 500;
+    padding: 8px 15px;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.hidden {
+    opacity: 0;
 }

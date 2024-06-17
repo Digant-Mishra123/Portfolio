@@ -11,6 +11,16 @@
             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onchange="toggleTheme()" checked>
             <label class="form-check-label" for="flexSwitchCheckChecked"><i class="bi bi-sun"></i></label>
         </div> -->
+        <style>
+            @keyframes fadeInOut {
+                0%, 100% { opacity: 0; }
+                50% { opacity: 1; }
+            }
+    
+            .fade {
+                animation: fadeInOut 2s infinite;
+            }
+        </style>
 </head>
 <body class="bg-black text-white">
 
@@ -18,14 +28,15 @@
      
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-          <h4 id="header-text" class="text-white p-3 navbar-brand">Digant Mishra<a href="https://www.linkedin.com/in/digant-mishra-781661242/"><i class="bi bi-arrow-up-right mx-1"></i></a> | Web <i>Developer</i></h4>
+          <!-- <h4 id="header-text" class="text-white p-3 navbar-brand">Digant Mishra<a href="https://www.linkedin.com/in/digant-mishra-781661242/"><i class="bi bi-arrow-up-right mx-1"></i></a> | Web <i>Developer</i></h4> -->
+          <h4 id="header-text" class="p-3 navbar-brand text-white">Digant Mishra<a href="https://www.linkedin.com/in/digant-mishra-781661242/"><i class="bi bi-arrow-up-right mx-1"></i></a><span id="header-text2" class="fade text-white"><i>| Web Developer</i></span></h4>
           <div class="toggle-theme">
             <input type="checkbox" id="toggleTheme" class="visually-hidden" onchange="toggleTheme()" checked>
             <label for="toggleTheme" id="toggleThemeLabel">
               <i id="toggleIcon" class="bi bi-moon btn btn-light border-1"></i>
             </label>
           </div>
-          <a href="#contact" class="btn btn-warning rounded-pill mx-3 mb-1">Hire Me</a>
+          <a href="#contact" class="btn btn-warning rounded-pill mx-3 mb-1 mt-2">Hire Me<i class="bi bi-arrow-up-right mx-1"></i></a>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="toggler-icon top-bar bg-white"></span>
@@ -79,11 +90,11 @@
             <div class="card-body text-center">
                 <img src="./images/My_photo(1).png" alt="" class="user-img">
                 <h1>Digant Mishra</h1>
-                <p class="lead fw-semibold">Fresher, B.tech CSE</p>
+                <p class="lead fw-semibold">Fresher</p>
                 <div>
                     <hr>
                 </div>
-                <p class="lead">Aspiring Full Stack Web Developer, with a strong commitment to learning and mastering various web development technologies. I have already built a solid foundation in key areas such as HTML, CSS, and JavaScript, and I am currently exploring backend technologies and databases.</p>
+                <p class="lead">Aspiring Full Stack Web Developer, with a strong commitment to learning and mastering various web development technologies. I have already built a strong foundation in key areas such as HTML, CSS, and JavaScript, and I am currently exploring backend technologies and databases.</p>
                 <a href="https://drive.google.com/file/d/1Q_Al9tgn17UkWeQFiJwiG5tvoKMmGc-s/view?usp=sharing" target="_blank" class="btn btn-light rounded-pill mt-3">Download Resume <i class="bi bi-arrow-right"></i></a>
             </div>
          </div>
@@ -128,7 +139,7 @@
                 </div>
             </div>
           </div> -->
-          <div class="mt-4 p-5">
+          <div class="mt-4 p-5 content2 hidden">
             <h1><span class="text-link">Academic Records</span></h1>
             <div class="row">
                 <div class="col-md-4 staggered">
@@ -168,7 +179,7 @@
           
 
           <!-- Skills -->
-          <div id="skills" class="text-white content my-8 ">
+          <div id="skills" class="text-white my-8 content2 hidden">
             <div class="p-4">
                 <div class="text-center mt-4 mb-4">
                     <h1>My Skills</h1>
@@ -176,8 +187,8 @@
                 <div>
                     <hr>
                 </div>
-                <div class="row g-4 mt-4">
-                    <div class="col-md-6 text-center">
+                <div class="row g-4 mt-4 staggered">
+                    <div class="col-md-6 text-center skills-img">
                         <h2>Programming Language</h2>
                         <img src="./images/skills/java.png" alt="" class="skill-img">
                         <img src="./images/skills/c.png" alt="" class="skill-img">
@@ -205,12 +216,28 @@
           </div>
 
           <!-- Project -->
-          <div id="projects" class=" text-white content my-5">
+          <div id="projects" class=" text-white my-5 content2 hidden">
             <div class="card-body p-5">
                 <div class="text-center mb-4">
                     <h1>My Projects</h1>
                     <div>
                         <hr>
+                    </div>
+                </div>
+                <div class="row mt-4 mb-4 g-4 project-list">
+                    <div class="col-md-4">
+                        <img src="./images/project3.png" class="img-fluid h-100" alt="">
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <h3>Restaurant Booking</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, dicta non facilis facere consequuntur odit temporibus et aliquam nulla eius veritatis. Illo quibusdam architecto doloremque.</p>
+                        <div class="tools">
+                            <img src="./images/skills/python.png" alt="">
+                        </div>
+                        <div>
+                            <a href="https://github.com/Digant-Mishra123/Restaurant-Project-Python" target="_blank" class="btn btn-sm btn-light">Source Code</a>
+                        </div>
                     </div>
                 </div>
                 <div class="row mt-4 mb-4 g-4 project-list">
@@ -257,7 +284,7 @@
           </div>
 
           <!-- Contact -->
-          <div id="contact" class=" text-white content my-5">
+          <div id="contact" class=" text-white my-5 content2 hidden">
             <div class="p-5">
                 <div class="text-center mb-3">
                     <h1>Get in Touch</h1>
@@ -265,8 +292,8 @@
                 <div>
                     <hr>
                 </div>
-                <div class="row mt-4 p-4">
-                    <div class="col-md-4 mb-4">
+                <div class="row mt-6">
+                    <div class="col-md-5 mb-4">
                         <form action="./index.html" method="get">
                             <input type="text" class="form-control mb-2" placeholder="Name">
                             <input type="text" class="form-control mb-2" placeholder="Mobile">
@@ -278,7 +305,7 @@
                     <div class="col-md-4">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.420983473562!2d85.7630564746939!3d20.241368114357456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a9f6b41dedd7%3A0x50ed2b8be436adba!2sJayalaxmi%20Residency!5e0!3m2!1sen!2sin!4v1718422395717!5m2!1sen!2sin" width="100%" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="col-md-4 mt-5">
+                    <div class="col-md-3 mt-5">
                         <p class="mb-1"><i class="bi bi-geo-alt-fill fs-2 mx-1"></i> Patrapada Bhubaneswar Odisha</p>
                         <p class="mb-1"><i class="bi bi-phone-fill mx-1 fs-2"></i>+91 8328921788</p>
                         <p class="mb-1"><i class="bi bi-envelope-at mx-1 fs-2"></i> digantmishra16@gmail.com</p>
