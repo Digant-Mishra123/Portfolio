@@ -3,9 +3,10 @@ let cards=document.querySelectorAll(".content")
 const socialLogos = document.querySelectorAll('.social-logo');
 const links = document.querySelectorAll(".text-link");
 const toggleicons = document.querySelectorAll(".toggler-icon");
-const arrowElements = document.querySelectorAll('.arrow');
+const arrowElements = document.querySelectorAll('.project-list');
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.content2');
+    const sections2 = document.querySelectorAll('.content2');
+    const sections3 = document.querySelectorAll('.content-intro');
 
     const observerOptions = {
         root: null,
@@ -22,13 +23,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const observerCallbackTopDown = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('slide-down');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
 
-    sections.forEach(section => {
+    const observer2 = new IntersectionObserver(observerCallback, observerOptions);
+    const observer3 = new IntersectionObserver(observerCallbackTopDown, observerOptions);
+
+    sections2.forEach(section => {
         section.classList.add('hidden');
-        observer.observe(section);
+        observer2.observe(section);
+    });
+
+    sections3.forEach(section => {
+        section.classList.add('hidden');
+        observer3.observe(section);
     });
 });
+
 
 function toggleTheme(){
     count++;
@@ -72,7 +89,7 @@ function toggleTheme(){
         }
         for(let i=0;i<arrowElements.length;i++){
             let ae=arrowElements[i];
-            ae.style.borderColor = 'black';
+            ae.style.boxShadow = '1px 1px 1px 1px black';
         }
 
         document.querySelector('#acaTable').classList.remove("border-white","table-dark");
@@ -115,7 +132,7 @@ function toggleTheme(){
         }
         for(let i=0;i<arrowElements.length;i++){
             let ae=arrowElements[i];
-            ae.style.borderColor = 'white';
+            ae.style.boxShadow = '1px 1px 1px 1px white';
         }
         document.querySelector('#acaTable').classList.add("border-white","table-dark");
     }

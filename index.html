@@ -28,39 +28,45 @@
      
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-          <!-- <h4 id="header-text" class="text-white p-3 navbar-brand">Digant Mishra<a href="https://www.linkedin.com/in/digant-mishra-781661242/"><i class="bi bi-arrow-up-right mx-1"></i></a> | Web <i>Developer</i></h4> -->
-          <h4 id="header-text" class="p-3 navbar-brand text-white">Digant Mishra<a href="https://www.linkedin.com/in/digant-mishra-781661242/"><i class="bi bi-arrow-up-right mx-1"></i></a><span id="header-text2" class="fade text-white"><i>| Web Developer</i></span></h4>
-          <div class="toggle-theme">
-            <input type="checkbox" id="toggleTheme" class="visually-hidden" onchange="toggleTheme()" checked>
-            <label for="toggleTheme" id="toggleThemeLabel">
-              <i id="toggleIcon" class="bi bi-moon btn btn-light border-1"></i>
-            </label>
-          </div>
-          <a href="#contact" class="btn btn-warning rounded-pill mx-3 mb-1 mt-2">Hire Me<i class="bi bi-arrow-up-right mx-1"></i></a>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="toggler-icon top-bar bg-white"></span>
-            <span class="toggler-icon middle-bar bg-white"></span>
-            <span class="toggler-icon bottom-bar bg-white"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mt-1 mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
-              <li class="nav-item">
-                <a class="nav-link active mx-3 text-link text-white" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-3 text-link text-white" href="#academics">Academics</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-3 text-link text-white" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-3 text-link text-white" href="#projects">Projects</a>
-              </li>
-            </ul>
-          </div>
-      
-          <!-- <div class="d-flex align-items-center flex-grow-1">
+            <h4 id="header-text" class="p-3 navbar-brand text-white">Digant Mishra<a href="https://www.linkedin.com/in/digant-mishra-781661242/"><i class="bi bi-arrow-up-right mx-1"></i></a><span id="header-text2" class="text-white"><i>| Web Developer</i></span></h4>
+            <div class="d-flex align-items-center">
+                <div class="toggle-theme me-2">
+                    <input type="checkbox" id="toggleTheme" class="visually-hidden" onchange="toggleTheme()" checked>
+                    <label for="toggleTheme" id="toggleThemeLabel">
+                        <i id="toggleIcon" class="bi bi-moon btn btn-light border-1"></i>
+                    </label>
+                </div>
+                <a href="#contact" class="btn btn-warning rounded-pill mx-3 mb-1 mt-2 order-lg-1 order-2 border-black">Hire Me<i class="bi bi-arrow-up-right mx-1"></i></a>
+            </div>
+            <button class="navbar-toggler collapsed order-lg-2 order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar bg-white"></span>
+                <span class="toggler-icon middle-bar bg-white"></span>
+                <span class="toggler-icon bottom-bar bg-white"></span>
+            </button>
+            <div class="collapse navbar-collapse order-lg-3 order-3" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mt-1 mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active mx-3 text-link text-white" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-link text-white" href="#academics">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-link text-white" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-link text-white" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-link text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+      <!-- <div class="d-flex align-items-center flex-grow-1">
             <div class="header">
               <h4 class="text-white p-3">Digant Mishra<a href="https://www.linkedin.com/in/digant-mishra-781661242/"><i class="bi bi-arrow-up-right mx-1"></i></a> | Web <i>Developer</i></h4>
             </div>
@@ -81,12 +87,10 @@
             <a href="#contact" class="btn btn-warning rounded-pill mx-3">Hire Me</a>
           </div>
         </div> -->
-        </div>
-      </nav>
       
     <div class="container my-4">
         <!-- Intro -->
-         <div class="card bg-dark text-white content intro-card">
+         <div class="card bg-dark text-white content intro-card content-intro hidden mb-4">
             <div class="card-body text-center">
                 <img src="./images/My_photo(1).png" alt="" class="user-img">
                 <h1>Digant Mishra</h1>
@@ -139,7 +143,7 @@
                 </div>
             </div>
           </div> -->
-          <div class="mt-4 p-5 content2 hidden">
+          <!-- <div class="mt-4 p-5 content2 hidden">
             <h1><span class="text-link">Academic Records</span></h1>
             <div class="row">
                 <div class="col-md-4 staggered">
@@ -150,7 +154,6 @@
                             <p><strong>Year:</strong> 2025</p>
                             <p><strong>CGPA:</strong> 8.6</p>
                         </div>
-                        <div class="arrow arrow-down"></div>
                     </div>
                 </div>
                 <div class="col-md-4 staggered">
@@ -161,7 +164,6 @@
                             <p><strong>Year:</strong> 2021</p>
                             <p><strong>Percentage:</strong> 94%</p>
                         </div>
-                        <div class="arrow arrow-down"></div>
                     </div>
                 </div>
                 <div class="col-md-4 staggered">
@@ -175,13 +177,45 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        
+        <div id="academics" class="mt-5 p-4 content2 hidden">
+            <div class="text-center">
+                <h1 class="">Academic Records</h1>
+            </div>
+            <div class="timeline">
+                <div class="checkpoint">
+                    <div>
+                        <h2 class="checkpoint-header">2021-2025</h2>
+                        <p class="checkpoint-para">Silicon University,CSE</p>
+                        <p class="text-justtify" style="text-align: justify">Currently pursuing a Bachelor of Technology in Computer Science and Engineering, where I am developing my skills in web development ,programming, and various Technologies.</p>
+                        <p class="checkpoint-para">CGPA - 8.6</p>
+                    </div>
+                </div>
+                <div class="checkpoint">
+                    <div>
+                        <h2 class="checkpoint-header">2019-2021</h2>
+                        <h3 class="checkpoint-para">Higher Secondary</h3>
+                        <p class="checkpoint-para">St.Xavier's High School</p>
+                        <p class="text-justtify" style="text-align: justify">This academic year was crucial in shaping my interest in technology and preparing me for advanced studies in Computer Science and Engineering.</p>
+                        <p class="checkpoint-para">Percentage - 94%</p>
+                    </div>
+                </div>
+                <div class="checkpoint">
+                    <div>
+                        <h2 class="checkpoint-header">2018-2019</h2>
+                        <h3 class="checkpoint-para">Secondary</h3>
+                        <p class="checkpoint-para">St.Xavier's High School</p>
+                        <p class="text-justtify" style="text-align: justify">This academic year was helped me to discover my passion for technology and its applications, setting the stage for my later pursuit of Computer Science and Engineering in higher education.</p>
+                        <p class="checkpoint-para">Percentage - 93%</p>
+                    </div>
+                </div>
+            </div>
         </div>
-          
-
           <!-- Skills -->
-          <div id="skills" class="text-white my-8 content2 hidden">
+          <div id="skills" class="text-white my-4 content2 hidden">
             <div class="p-4">
-                <div class="text-center mt-4 mb-4">
+                <div class="text-center mb-4">
                     <h1>My Skills</h1>
                 </div>
                 <div>
@@ -218,25 +252,25 @@
           <!-- Project -->
           <div id="projects" class=" text-white my-5 content2 hidden">
             <div class="card-body p-5">
-                <div class="text-center mb-4">
+                <div class="text-center mt-4 mb-4">
                     <h1>My Projects</h1>
                     <div>
                         <hr>
                     </div>
                 </div>
-                <div class="row mt-4 mb-4 g-4 project-list">
+                <div class="row mt-5 mb-4 g-4 project-list">
                     <div class="col-md-4">
                         <img src="./images/project3.png" class="img-fluid h-100" alt="">
                     </div>
                     
                     <div class="col-md-8">
                         <h3>Restaurant Booking</h3>
-                        <p>A simple Restaurant Page which will handle the orders and generate the bill of the customers efficiently.Click below to see the soure code</p>
+                        <p class="text-justtify" style="text-align: justify">A simple Restaurant Page which will handle the orders and generate the bill of the customers efficiently.Click below to see the soure code</p>
                         <div class="tools">
                             <img src="./images/skills/python.png" alt="">
                         </div>
                         <div>
-                            <a href="https://github.com/Digant-Mishra123/Restaurant-Project-Python" target="_blank" class="btn btn-sm btn-light">Source Code</a>
+                            <a href="https://github.com/Digant-Mishra123/Restaurant-Project-Python" target="_blank" class="btn btn-sm btn-light mb-2">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -247,7 +281,7 @@
                     
                     <div class="col-md-8">
                         <h3>GoHost Landing Page</h3>
-                        <p>Static hosting Website using html,css and Js to explore different types of hosting ,their prices and many more.</p>
+                        <p class="text-justtify" style="text-align: justify">Static hosting Website using html,css and Js to explore different types of hosting ,their prices and many more.</p>
                         <div class="tools">
                             <img src="./images/skills/html.png" alt="">
                             <img src="./images/skills/css.png" alt="">
@@ -267,7 +301,7 @@
                     
                     <div class="col-md-8">
                         <h3>Portfolio Website</h3>
-                        <p>Explore my Portfolio to get a display of my professional journey, highlighting key projects and achievements and technologies used.</p>
+                        <p class="text-justtify" style="text-align: justify">Explore my Portfolio to get a display of my professional journey, highlighting key projects and achievements and technologies used.</p>
                         <div class="tools">
                             <img src="./images/skills/html.png" alt="">
                             <img src="./images/skills/css.png" alt="">
@@ -275,8 +309,8 @@
                             <img src="./images/skills/bootstrap.png" alt="">
                         </div>
                         <div>
-                            <a href="./index.html" class="btn btn-sm btn-light">Live Preview</a>
-                            <a href="https://github.com/Digant-Mishra123/Portfolio" target="_blank" class="btn btn-sm btn-light">Source Code</a>
+                            <a href="./index.html" class="btn btn-sm btn-light mb-2">Live Preview</a>
+                            <a href="https://github.com/Digant-Mishra123/Portfolio" target="_blank" class="btn btn-sm btn-light mb-2">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -307,7 +341,7 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.420983473562!2d85.7630564746939!3d20.241368114357456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a9f6b41dedd7%3A0x50ed2b8be436adba!2sJayalaxmi%20Residency!5e0!3m2!1sen!2sin!4v1718422395717!5m2!1sen!2sin" width="100%" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="col-md-3 mt-5">
-                        <p class="mb-1"><i class="bi bi-geo-alt-fill fs-2 mx-1"></i> Patrapada Bhubaneswar Odisha</p>
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill fs-2 mx-1"></i> Bhubaneswar Odisha</p>
                         <p class="mb-1"><i class="bi bi-phone-fill mx-1 fs-2"></i>+91 8328921788</p>
                         <p class="mb-1"><i class="bi bi-envelope-at mx-1 fs-2"></i> digantmishra16@gmail.com</p>
                     </div>
