@@ -15,37 +15,6 @@
 }.container {   
     position: relative;
 }
-/* .aca {
-    background-color: black;
-    border: 1px solid #6c757d;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-}
-.aca:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.aca-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: white;
-}
-.aca-content p {
-    margin: 5px 0;
-    color: white;
-}
-.staggered {
-    margin-top: 20px;
-}
-.staggered:nth-child(2) {
-    margin-top: 40px;
-}
-.staggered:nth-child(3) {
-    margin-top: 60px;
-} */
-
 .checkpoint-header{
     margin-bottom: 0.5em;
     color: white;
@@ -298,4 +267,9 @@
 }
 .hidden {
     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+.content-header-card{
+    z-index: 1;
 }
