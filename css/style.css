@@ -102,7 +102,7 @@
         height: 4em;
         top: -2em;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
     .timeline .checkpoint div::before{
         top: -0.5em;
@@ -205,7 +205,7 @@
 }
 .project-list{
     box-shadow: 1px 1px 1px 1px white;
-    transition: all 0.3s ease-in-out;
+    transition: all 1.2s ease-in-out;
 }
 .project-list:hover{
     transform: scale(1.05);
@@ -255,19 +255,19 @@
     }
 }
 .slide-in {
-    animation: slideInLeft 0.9s ease-out forwards;
+    animation: slideInLeft 1.2s ease-out forwards;
 }
 .slide-down {
-    animation: slideInTop 0.8s ease-out forwards;
+    animation: slideInTop 1s ease-out forwards;
     z-index: -1;
 }
 .slide-top {
-    animation: slideInBottom 0.5s ease-out forwards;
+    animation: slideInBottom 0.9s ease-out forwards;
     z-index: -1;
 }
 .hidden {
     opacity: 0;
-    transition: opacity 0.8s ease-in-out;
+    transition: opacity 1.2s ease-in-out;
     pointer-events: none;
 }
 .content-header-card{
